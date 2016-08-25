@@ -25,6 +25,8 @@ module.exports = class deco extends Component {
     if (this.state.tip){
       return (
         <View style={styles.container}>
+        <Image source={{uri: this.state.tip_image}}
+     style={{width: 300, height: 300, margin: 20}} />
           <Text>Tip of the day : {this.state.tip} </Text>
         </View>
       )
